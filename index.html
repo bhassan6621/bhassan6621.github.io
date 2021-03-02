@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html>
 <title>CS 355 Home Page</title>
+<link rel="stylesheet" href="styles.css">
 <body>
-<h1>This is my home page for CS 355</h1>
-<a href="./CSSPorfolio /index.html">Link to Portfolio</a>
-<a href="WeatherAPI.html" > Link to Weather App</a>
+    <!-- <h1>This is my home page for CS 355</h1>
+    <a href=".projects/CSSPorfolio /index.html">Link to Portfolio</a>
+    <a href="./projects/WeatherAPI.html" > Link to Weather App</a> -->
+    <div class="nav-bar">
+        <div class="dropdown">
+            <button class="dropbtn">Projects</button>
+            <div class="dropdown-content">
+                <a href="./projects/CSSPortfolio/index.html">Portfolio</a>
+                <a href="./projects/WeatherAPI.html">Weather App</a>
+            </div>
+        </div>
+        <div class="aboutMe nav-section">
+            <a class="nav-section-text" href="#about-me">About Me</a>
+        </div>
+        <div class="contact nav-section">
+            <a class="nav-section-text" href="#contact">Contact</a>
+        </div>
+    </div> 
+    <header class="header">
+        <h1>Welcome!</h1>
+    </header>
 </body>
 </html>
