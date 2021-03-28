@@ -24,10 +24,15 @@ $(document).ready(function() {
         var temp = Math.round(data.main.temp);
         var desc = data.weather[0].description;
         var icon = data.weather[0].icon;
+        var minTemp = data.main.temp_min;
+        var maxTemp = data.main.temp_max;
+
 
         $("#city").html(city);
         $("#temp").html(temp);
         $("#desc").html(desc);
         $("#icon").attr('src',icon);
+        $("#min_temp").html(minTemp);
+        $("#max_temp").html(maxTemp);
     }
 });
